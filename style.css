@@ -2,13 +2,98 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-size: 18px;
-    font-family: "Helvetica Neue", serif;
+    font-size: 14px;
+    font-weight: 520;
+    font-family: "Helvetica Neue", sans-serif;
     line-height: 1.5em;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    display: none;
 }
 
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    background-color: black;
+}
+header img {
+    border-radius: 30px;
+    margin-left: 20px;
+}
+header ul {
+    margin-right: 20px;
+}
+header ul li {
+    display: inline;
+}
+
+header a {
+    color: white;
+}
+
+main {
+    position: relative;
+    top: 75px;
+    z-index: -1;
+}
+
+.description {
+    margin: auto;
+    padding: 50px 150px;
+    background-color: #eee;
+}
+.description img {
+    width: 300px;
+    height: 330px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.description h2 {
+    font-weight: bold;
+}
+.description-p2 {
+    clear: both;
+}
+
+.relationship {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    padding: 50px 150px;
+}
+.relationship img {
+    width: 330px;
+    height: 330px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 75px;
+    background-color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
